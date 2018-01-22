@@ -6,7 +6,7 @@ A Choose File/Folder Dialog Component for unity. This was made originally for Un
 
 ## Contents
 
-The Project contains a simple demo (Demo Windows.zip) using this component where it asks you to choose a .txt file and then it shows you the complete path to the txt file. 
+The Project contains a simple demo (Demo Build Windows.zip) using this component where it asks you to choose a .txt file and then it shows you the complete path to the txt file. 
 
 In addition to the demo there's also a unity package that you can use in your own unity projects as follows:
 
