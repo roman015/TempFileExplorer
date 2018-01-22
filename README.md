@@ -8,51 +8,35 @@ The Project contains a simple demo (Demo Windows.zip) using this component where
 
 In addition to the demo there's also a unity package that you can use in your own unity projects as follows:
 
->// Make an instance of the OpenDialog Prefab
->
->GameObject original = Resources.Load<GameObject>("FileOpenDialog/Prefab/OpenDialog");
->
->GameObject openFileDialog = Instantiate<GameObject>(original);
->
->Dialog dialog = openFileDialog.GetComponent<Dialog>();
->
->
->// Choose a file
->
->dialog.OpenFileDialog("Try Choosing a txt file", @"C:\StartingLocationHere", ".txt", OnDialogComplete);
->
->// Choose a folder
->
->dialog.OpenFileDialog("Try Choosing a folder", @"C:\StartingLocationHere", OnDialogComplete);
+```
+// Make an instance of the OpenDialog Prefab
+GameObject original = Resources.Load<GameObject>("FileOpenDialog/Prefab/OpenDialog");
+GameObject openFileDialog = Instantiate<GameObject>(original);
+Dialog dialog = openFileDialog.GetComponent<Dialog>();
+
+// Choose a file
+dialog.OpenFileDialog("Try Choosing a txt file", @"C:\StartingLocationHere", ".txt", OnDialogComplete);
+// Choose a folder
+dialog.OpenFileDialog("Try Choosing a folder", @"C:\StartingLocationHere", OnDialogComplete);
+```
 
 You'll need to pass a function as the handler for when the file/folder is chosen. A sample handler is shown below:
 
->void OnDialogComplete(bool isSucessful, string path)
->
->{
->
->    if (isSucessful)
->
->    {
->
->        Debug.Log("Path : " + path);
->
->    }
->
->    else
->
->    {
->
->        Debug.Log("No File/Folder Chosen, Cancel was pressed or something else happened.");
->
->    }
->
->}
+```
+void OnDialogComplete(bool isSucessful, string path)
+{
+    if (isSucessful)
+    {
+        Debug.Log("Path : " + path);
+    }
+    else
+    {
+        Debug.Log("No File/Folder Chosen, Cancel was pressed or something else happened.");
+    }
+}
+```
 
-Finally, there's the source code of the component. 
-
-
-Kindly note that the images in this project were taken from the following sources:
+Finally, there's the source code of the component. Kindly note that the images in this project were taken from the following sources:
 
 Folder Icon by Arthur Shlain (https://thenounproject.com/ArtZ91/)
 
