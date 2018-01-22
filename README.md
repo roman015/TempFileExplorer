@@ -2,6 +2,8 @@
 
 A Choose File/Folder Dialog Component for unity. This was made originally for Unity 5 and now it's ported over to Unity 2017 (Without much hassle). 
 
+![Refer the screenshot to see how it looks like](screenshot.png?raw=true "Screenshot")
+
 ## Contents
 
 The Project contains a simple demo (Demo Windows.zip) using this component where it asks you to choose a .txt file and then it shows you the complete path to the txt file. 
